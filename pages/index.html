@@ -4,41 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Biningging</title>
+    <title>Geo-Tagging Dashboard</title>
+    <link rel="icon" href="../assets/icon/magnifier.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
     <style>
       body {
         display: flex;
         font-family: Poppins, Arial, sans-serif;
         flex-direction: column;
-        align-items: center; /*horizontal*/
-        justify-content: center; /*vertikal*/
-        height: 100vh;
         margin: 0;
-        color: #7a7a7a;
+        color: #3e3e3e;
       }
 
-      div {
-        margin: auto;
+      .content-page {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        display: flex;
+        height: 30px;
+        border-bottom: solid 1px #d6d6d6;
+        padding: 15px;
+        align-items: center;
+      }
+
+      button {
+        margin-right: 20px;
+        border-style: none;
+        width: 50px;
+        height: 40px;
+        border-radius: 3px;
+        align-items: center;
         justify-content: center;
+        display: flex;
       }
 
-      img {
-        width: 200px;
-      }
-      a {
-        color: rgb(156, 156, 156);
+      button:hover{
+        background-color: #c7c7c7;
       }
 
-      a:hover {
-        color: rgb(59, 76, 150);
-        transition-duration: 0.5s;
+      .header-title p{
+        height: auto;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-weight:450;
+      }
+
+      .profile {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+      }
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+      }
+
+      .user-profile img {
+        width: 40px;
+        border-radius: 100%;
+        border: solid 1px #000;
+        margin-left: 15px;
+      }
+
+      main {
+      }
+
+      footer {
       }
     </style>
   </head>
   <body>
-    <h1>Let's get started</h1>
-    <h3>this is the biginning of Ma& Journey</h3>
-    <img src="../assets/img/solaDerp.png" alt="image" />
-    <h3><a href="comingsoon.html">Here</a></h3>
+    <div class="content-page">
+      <header>
+        <button>
+          <svg
+            width="24"
+            height="19"
+            viewBox="0 0 28 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 1.70725C0 0.764363 0.764363 0 1.70725 0H26.2917C27.2346 0 27.9989 0.764363 27.9989 1.70725C27.9989 2.65014 27.2346 3.41451 26.2917 3.41451H1.70725C0.764362 3.41451 0 2.65014 0 1.70725ZM0 11.3621C0 10.4192 0.764363 9.65482 1.70725 9.65482H26.2917C27.2346 9.65482 27.9989 10.4192 27.9989 11.3621C27.9989 12.305 27.2346 13.0693 26.2917 13.0693H1.70725C0.764362 13.0693 0 12.305 0 11.3621ZM1.70725 19.3096C0.764363 19.3096 0 20.074 0 21.0169C0 21.9598 0.764362 22.7241 1.70725 22.7241H26.2917C27.2346 22.7241 27.9989 21.9598 27.9989 21.0169C27.9989 20.074 27.2346 19.3096 26.2917 19.3096H1.70725Z"
+              fill="#3E3E3E"
+            />
+          </svg>
+        </button>
+        <div class="header-title">
+          <p>Dashboard</p>
+        </div>
+        <div class="profile">
+          <div class="user-profile">
+            <p><strong>Sola Derp</strong></p>
+            <img src="../assets/img/solaDerp.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <p>Konten</p>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
