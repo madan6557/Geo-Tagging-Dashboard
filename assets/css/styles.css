@@ -1,1 +1,91 @@
-/* there will be something in here */
+body {
+  display: flex;
+  font-family: Poppins, Arial, sans-serif;
+  flex-direction: column;
+  margin: 0;
+  color: #3e3e3e;
+}
+
+.content-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  height: 30px;
+  border-bottom: solid 1px #d6d6d6;
+  padding: 15px;
+  align-items: center;
+}
+
+button {
+  background-color: #ffffff;
+  margin-right: 20px;
+  border: none;
+  width: 50px;
+  height: 40px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+button:hover {
+  background-color: #c7c7c7;
+  transition: 0.5s;
+}
+button:hover svg path {
+  fill: #000000;
+  transition: 0.5s;
+}
+
+.header-title p {
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 450;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.user-profile img {
+  width: 40px;
+  border-radius: 100%;
+  border: solid 1px #000;
+  margin-left: 15px;
+}
+
+/* Main */
+
+main {
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Footer */
+
+footer {
+}
