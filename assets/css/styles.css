@@ -15,13 +15,18 @@ body {
 
 /* Nav */
 
-nav {
-  display: flex;
+.navbar {
   height: 100%;
   width: 25%;
   justify-content: center;
   padding: 10px;
   padding-right: 0;
+  transition: width 0.5s ease, opacity 0.5s ease; 
+}
+
+.navbar.hidden {
+  width: 0%;
+  opacity: 0;
 }
 
 .nav-container {
@@ -45,6 +50,7 @@ nav {
   border-bottom: solid 1px #ffffff3d;
   height: 10%;
   width: 100%;
+  min-width: 250px;
   justify-content: end;
   align-items: left;
 }
@@ -66,6 +72,7 @@ nav {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  min-width: 250px;
   align-items: center;
 }
 .menu {
@@ -78,6 +85,7 @@ nav {
   width: 90%;
   justify-content: left;
   align-items: center;
+  transition: 0.5s;
 }
 
 .menu p {
@@ -87,6 +95,17 @@ nav {
 
 .menu svg path {
   fill: #8d8d8d;
+}
+
+.menu:hover{
+  background-color: #c7c7c7;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.menu:hover svg path{
+  fill: #000000;
+  transition: 0.5s;
 }
 
 /* Header */
@@ -100,6 +119,7 @@ header {
 }
 
 button {
+  background-color: transparent;
   margin-right: 20px;
   border: none;
   width: 50px;
@@ -108,6 +128,7 @@ button {
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: 0.5s;
 }
 
 button:hover {
@@ -136,6 +157,7 @@ button:hover svg path {
 .user-profile {
   display: flex;
   align-items: center;
+  text-align: right;
   font-size: 15px;
 }
 
