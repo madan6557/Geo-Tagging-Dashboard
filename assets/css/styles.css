@@ -21,7 +21,7 @@ body {
   justify-content: center;
   padding: 10px;
   padding-right: 0;
-  transition: width 0.5s ease, opacity 0.5s ease; 
+  transition: width 0.5s ease, opacity 0.5s ease;
 }
 
 .navbar.hidden {
@@ -75,6 +75,7 @@ body {
   min-width: 250px;
   align-items: center;
 }
+
 .menu {
   color: #8d8d8d;
   display: flex;
@@ -97,25 +98,32 @@ body {
   fill: #8d8d8d;
 }
 
-.menu:hover{
+.menu:hover {
   background-color: #c7c7c7;
   color: #000000;
   transition: 0.5s;
 }
 
-.menu:hover svg path{
+.menu:hover svg path {
   fill: #000000;
   transition: 0.5s;
 }
 
 /* Header */
+header{
+  border-bottom: solid 1px #d6d6d6;
+}
 
-header {
+header .layer {
   display: flex;
   height: 30px;
-  border-bottom: solid 1px #d6d6d6;
   padding: 15px;
   align-items: center;
+}
+
+header .layer.b{
+  padding: 10px;
+  padding-top: 0;
 }
 
 button {
@@ -135,6 +143,7 @@ button:hover {
   background-color: #c7c7c7;
   transition: 0.5s;
 }
+
 button:hover svg path {
   fill: #000000;
   transition: 0.5s;
@@ -144,8 +153,8 @@ button:hover svg path {
   height: auto;
   display: flex;
   align-items: center;
-  font-size: 25px;
-  font-weight: 450;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 .profile {
@@ -168,6 +177,25 @@ button:hover svg path {
   margin-left: 15px;
 }
 
+.search-bar input{
+  width: 100%;
+  border:solid 2px #afafaf;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Poppins, Arial, sans-serif;
+  width: 250px;
+  padding: 3px;
+  padding-left: 10px;
+}
+
+.layer.b .icon{
+  margin-right: 19px;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
 /* Main */
 
 main {
@@ -177,6 +205,7 @@ main {
   overflow-x: scroll;
   height: 100vh;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -188,5 +217,4 @@ p {
 
 /* Footer */
 
-footer {
-}
+footer {}
